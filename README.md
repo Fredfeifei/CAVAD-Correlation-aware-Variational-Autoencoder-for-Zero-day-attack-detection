@@ -156,34 +156,9 @@ The evaluation script computes multiple anomaly scores and generates detailed re
 
 The data preprocessing approach in this repository is based on the methodology from the **PBCNN project**: [https://github.com/sspku-2021/PBCNN](https://github.com/sspku-2021/PBCNN)
 
-We use the preprocessing ideas from PBCNN for converting raw PCAP files to packet byte sequences and session-based representations.
+We use the preprocessing ideas from PBCNN for converting raw PCAP files to packet byte sequences and session-based representations for CICIDS2017 and 2018.
 
-### Preprocessing Steps
-
-1. Download raw datasets from official sources:
-   - CIC-IDS2017: https://www.unb.ca/cic/datasets/ids-2017.html
-   - CSE-CIC-IDS2018: https://www.unb.ca/cic/datasets/ids-2018.html
-   - TON_IoT: https://research.unsw.edu.au/projects/toniot-datasets
-
-2. Set up MongoDB instance
-
-3. Run preprocessing scripts:
-```bash
-# For TON_IoT dataset
-python data_preprocess.py
-
-# For CIC-IDS2017 dataset
-python Data_Preprocess/IDS_2017_TO_Mong.py
-
-# For CSE-CIC-IDS2018 dataset
-python Data_Preprocess/IDS_2018_TO_Mong.py
-```
-
-4. Update dataset paths in `config.py` to match your local setup
-
-**Note:** Processed datasets will be made available upon request. Please contact the authors for access to preprocessed NPZ files.
-
----
+Other you can used the preprocessed data in ......
 
 ## Datasets
 
@@ -203,30 +178,3 @@ The experiments are conducted on three public intrusion-detection datasets:
 
 ---
 
-## Citation
-
-If you use this code in your research, please cite our work:
-
-```bibtex
-@article{cavad2024,
-  title={CAVAD: Correlation-Aware Variational Autoencoder for Zero-Day Network Anomaly Detection},
-  author={[Author Names]},
-  journal={[To be updated]},
-  year={2024}
-}
-```
-
----
-
-## Acknowledgments
-
-- Data preprocessing approach based on **PBCNN**: [https://github.com/sspku-2021/PBCNN](https://github.com/sspku-2021/PBCNN)
-- Dataset providers: Canadian Institute for Cybersecurity (CIC), University of New South Wales (UNSW)
-
----
-
-## Contact
-
-For questions or collaboration:
-- Email: [your_email@domain.com]
-- Issues: [GitHub Issues](https://github.com/your-username/CAVAD/issues)
