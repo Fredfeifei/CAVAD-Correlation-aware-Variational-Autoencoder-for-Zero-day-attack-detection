@@ -79,19 +79,6 @@ CAVAD/
 - CUDA-capable GPU (recommended)
 - MongoDB (for data preprocessing)
 
-### Install Dependencies
-
-```bash
-# Create virtual environment
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-
-# Install dependencies
-pip install -r requirements.txt
-```
-
-Key dependencies: PyTorch, NumPy, scikit-learn, pymongo, tqdm, matplotlib, seaborn, pandas
-
 ---
 
 ## Usage
@@ -177,4 +164,5 @@ The experiments are conducted on three public intrusion-detection datasets:
 - Attack types: DDoS, DoS, Ransomware, Backdoor, Injection, XSS, Password, Scanning, MITM
 
 ---
+
 
